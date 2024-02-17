@@ -12,9 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/topaz/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 TARGET_BOOT_ANIMATION_RES := 1080
-ARROW_GAPPS := true
+WITH_GAPPS := true
 DEVICE_MAINTAINER := Scorpion 
 
 PRODUCT_NAME := arrow_topaz
